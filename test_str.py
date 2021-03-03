@@ -15,6 +15,6 @@ class Teststr:
     def test_2(self):
         assert len_is_odd("1111") == True
 
-    @pytest.mark.parametrize("x", ['', '1'])
+    @pytest.mark.parametrize("x", [''])
     def test_3(self,x):
-        assert len_is_odd(x) == False
+        assert len_is_odd(x) == True
